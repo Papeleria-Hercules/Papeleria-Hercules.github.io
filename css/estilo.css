@@ -1,0 +1,256 @@
+ /*Body*/
+body{
+		/*para colocar ina img de fondo*/
+	background-image:url("../imagenes/fondo1.jpg");
+		/*para no repetir la img de fondo*/
+	background-repeat: no-repeat;
+		/*para ajustar el tamaño de la imagen*/
+	background-size: 100% 100%;
+	/*Font-Family es para el tipo de letra: si el 1o. no lo encuentra en el navegador, coloca el segundo
+	, si no el tercero*/
+	font-family:Puppy;
+	/*Font-size es para el tamaño se expresa en px*/
+	font-size: 50px;
+	/*Color es para el color de las letras: Puedes colocar su 
+	valor hexadecimal, el nombre del color o valores rbg*/
+	color: Black;
+}
+hr{
+	/*border es para la linea
+	tamaño en px Tipo de linea y color*/
+	border: 5px solid #032A95;
+	/*border-radius es para el terminado de las orillas
+	el radio que tendra se expresa en px*/
+	border-radius: 5px;
+}
+
+p{
+	/*Text-align se usa para alinear el texto
+	por default estan alineados a la izquierda*/
+	text-align: justify;
+	font-size: 35px;
+	color: Purple;
+}
+tables,td,tr{
+	/*linea grosor y tipo de linea*/
+	border:4px solid;
+	/*color de la linea*/
+	border-color:black;
+	/*alineacion del texto*/
+	text-align:center;
+	/*color de fondo*/
+	background-color:#CACFD2;
+}
+th{
+	background-color:white;
+}
+ul{
+	/*indica el tipo de viñeta, en este caso 
+	un circulo, puede ser tmbn un cuadro*/
+	list-style-type:circle;
+	list-style-position: inside;
+}
+
+ol{
+	/*Algunos de los valores de list-style-type son:
+	lower-alpha; lower-roman; upper-alpha; upper-roman;
+	a,b,c,d,e,f i,ii,iii,iv A,B,C,D,E,F I,II,III,IV*/
+	list-style-type:upper-roman;
+	list-style-position: inside;
+}
+.pie{
+	text-align:center;
+	font-size:14px;
+	color:#4A235A;
+	font-family:Transformers;
+	font-weight:bold;
+}
+.table-text{
+	font-size:15px;
+	font-family:Aero;
+	color:Black;
+}
+.text{
+	font-size:50px;
+	color:White;
+	font-weight:bold;
+	text-align:center;
+	font-family:Cherry;
+}
+.img-Marquee{
+	width:400px;
+	height:400px;
+}
+.Bottom{
+	Border-radius:60%;
+	Width:100px;
+	height:100px;
+}
+.img-table{
+	width:250px;
+	height:250px;
+}
+.other-img{
+	width:500px;
+	height:500px;
+	border:2px solid;
+	padding:10px;
+	border-color:pink;
+}
+
+@font-face{
+	font-family: Cherry;
+	src: url("../fuentes/Cherry Bird Demo.ttf");	
+}
+
+@font-face{
+	font-family:Puppy;
+	src: url("../fuentes/Puppy.otf");	
+}
+
+@font-face{
+	font-family:Transformers;
+	src: url("../fuentes/Transformers Movie.ttf");	
+}
+
+@font-face{
+	font-family:Aero;
+	src: url("../fuentes/Aero.ttf");	
+}
+/*uso de Div's*/
+/*Div o caja para el encabezado*/
+*{
+	margin:0px;
+	padding:0px;
+}
+div#top{
+	width:100%;
+	height:100px;
+	background-color:#33BEFF;
+	background-image:linear-gradient(#EC7063,#F4F6F7)
+}
+
+div#principal{
+	margin:auto;
+	margin-top:10px;
+	width:90%;
+	height:600px;
+	background-image:radial-gradient(#EC7063,#ABEBC6);
+}
+div#piep{
+	margin:auto;
+	margin-top:5px;
+	width:100%;
+	height:100px;
+	background-image:radial-gradient(Pink,#ABEBC6);
+}
+div#principal2{
+	margin:auto;
+	margin-top:10px;
+	width:90%;
+	/*height:700px;*/
+	background-image:radial-gradient(#EC7063,#ABEBC6);
+}
+div#principal3{
+	margin:auto;
+	margin-top:5px;
+	width:90%;
+	background-image:radial-gradient(#EC7063,#ABEBC6);
+}
+.caja{
+	height:350px;
+	width:250px;
+	background:yellow;
+	border:1px solid black;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+
+.caja:hover{
+	box-shadow:0 0 10px red;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:2px;
+	font-size:20px;
+	color:purple;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+.textoProductos{
+	width:500px;
+	background-image:linear-gradient(gray,blue);
+	font-size:20px;
+	color:White;	
+}
+.cajat{
+	height:100px;
+	width:100px;
+	background:red;
+	border:1px solid black;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.cajat:hover{
+	box-shadow:0 0 10px black;
+	transform:scale(1.3);
+}
